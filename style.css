@@ -8,7 +8,7 @@
 }
 
 body{
-    height: 100000px;
+    height: 1000px;
 }
 
 /* ini untuk navbar */
@@ -34,6 +34,17 @@ body{
     padding: 10px 20px;
     border-radius: 30px;
     border: none;
+}
+
+.burgermenu .bars{
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    margin-top: 5px;
+}
+
+.burgermenu{
+    display: none;
 }
 
 /* ini untuk hero */
@@ -261,10 +272,105 @@ body{
     
 }
 
+.buttonWraper{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.btnCV{
+    background-color: orange;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.btnCV button{
+    background-color: green;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.btnCV .serviceBTN{
+    border-radius: 50%;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+.buttonWraper h3{
+    margin-left: 20px;
+    color: orange;
+}
+
 .footer{
    text-align: center;
 }
 
 .footer span{
     color: orange;
+}
+
+@media( max-width:480px){
+   .navigation,
+   .NavBtn{
+    display: none;
+   }
+
+   .burgermenu{
+    display: block;
+   }
+   
+   .hero{
+    flex-wrap: wrap;
+   }
+
+   .hero h1{
+    font-size: 35px;
+   }
+
+   .hero img{
+    height: 300px;
+    width: 300px;
+
+   }
+
+   .ribbon {
+    text-align: center;
+   }
+
+   .hero2 .button2 .tombol4{
+    font-size: 13px;
+   }
+
+   .hero2{
+    align-items: center;
+   }
+   
+   
+   .hero2 .herotext2{
+    width: 40%;
+   }
+
+   #serviceCard{
+    flex-wrap: wrap;
+   }
+
+   .profil{
+    flex-wrap: wrap;
+   }
+
+   .profil img {
+    height: 350px;
+    width: 350px;
+   }
+
+   .profiltext{
+    width: 100%;
+   }
+
+   
 }
